@@ -12,42 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "budget": {
-      "type": "decimal"
-    },
-    "location": {
-      "type": "string"
-    },
-    "timeline": {
-      "type": "string",
-      "description": "e.g. 4 Semanas"
-    },
-    "warranty": {
-      "type": "string",
-      "default": "5 Años"
-    },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
+    "title": { "type": "string", "required": true },
+    "description": { "type": "richtext" },
+    "budget": { "type": "decimal" },
+    "location": { "type": "string" },
+    "timeline": { "type": "string" },
+    "warranty": { "type": "string", "default": "5 Años" },
+    "mainImage": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "gallery": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+    "videos": { "type": "media", "multiple": true, "allowedTypes": ["videos"] },
     "category": {
       "type": "relation",
       "relation": "manyToOne",

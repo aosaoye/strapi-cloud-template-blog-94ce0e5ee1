@@ -12,33 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "heroTitle": {
-      "type": "string",
-      "required": true
-    },
-    "heroSubtitle": {
-      "type": "string"
-    },
-    "heroImage": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "aboutTitle": {
-      "type": "string"
-    },
-    "aboutContent": {
-      "type": "richtext"
-    },
-    "statsYears": {
-      "type": "integer",
-      "default": 15
-    },
-    "statsProjects": {
-      "type": "integer",
-      "default": 500
-    }
+    "heroTitle": { "type": "string", "required": true },
+    "heroSubtitle": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "heroCtaText": { "type": "string", "default": "Solicitar Presupuesto" },
+    "heroCtaLink": { "type": "string", "default": "/contact" },
+    "aboutTitle": { "type": "string" },
+    "aboutContent": { "type": "richtext" },
+    "statsYears": { "type": "integer", "default": 15 },
+    "statsProjects": { "type": "integer", "default": 500 }
   }
 }
