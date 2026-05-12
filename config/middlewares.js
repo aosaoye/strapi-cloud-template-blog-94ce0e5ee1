@@ -12,7 +12,7 @@ module.exports = [
             "'self'",
             'data:',
             'blob:',
-            'dl.airtable.com',
+            'market-assets.strapi.io',
             'https://*.strapi.io',
             'https://*.strapiapp.com',
           ],
@@ -20,6 +20,7 @@ module.exports = [
             "'self'",
             'data:',
             'blob:',
+            'market-assets.strapi.io',
             'https://*.strapi.io',
             'https://*.strapiapp.com',
           ],
@@ -28,7 +29,15 @@ module.exports = [
       },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      origin: ['*'],
+      headers: ['*'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   {
